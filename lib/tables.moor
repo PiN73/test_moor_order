@@ -1,0 +1,14 @@
+CREATE TABLE todos (
+    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT
+);
+
+query1:
+    SELECT *
+    FROM todos
+    ORDER BY $order, id;
+
+query2:
+    SELECT *
+    FROM todos
+    ORDER BY $order;
